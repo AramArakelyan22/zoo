@@ -1,25 +1,24 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  zoo
 //
-//  Created by Aram Arakelyan on 10.05.22.
+//  Created by Aram Arakelyan on 11.05.22.
 //
-
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
+
     var fishesButton: UIButton!
-    var button: CommonButton!
+    var birdsButton: UIButton!
+    var mammalsButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         commonInit()
-        button = CommonButton()
+        
     }
-
-
 }
 
-extension ViewController {
+extension HomeViewController {
     
     func commonInit() {
         initFishesButton()
@@ -30,7 +29,6 @@ extension ViewController {
     func initFishesButton() {
         fishesButton = UIButton()
         fishesButton.setTitle("Fishes", for: .normal)
-        fishesButton.setTitleColor(.black, for: .normal)
         fishesButton.setImage(UIImage(named: "fishes.jpeg"), for: .normal)
         fishesButton.translatesAutoresizingMaskIntoConstraints = false
     }

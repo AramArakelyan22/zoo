@@ -13,6 +13,8 @@
 		83FB4FD3282AC3D500224DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FB4FD1282AC3D500224DA3 /* Main.storyboard */; };
 		83FB4FD5282AC3D800224DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83FB4FD4282AC3D800224DA3 /* Assets.xcassets */; };
 		83FB4FD8282AC3D800224DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83FB4FD6282AC3D800224DA3 /* LaunchScreen.storyboard */; };
+		83FB4FE2282BA88200224DA3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FB4FE1282BA88200224DA3 /* HomeViewController.swift */; };
+		83FB4FE4282C3BF500224DA3 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FB4FE3282C3BF500224DA3 /* CommonButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		83FB4FD4282AC3D800224DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83FB4FD7282AC3D800224DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83FB4FD9282AC3D800224DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83FB4FE1282BA88200224DA3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		83FB4FE3282C3BF500224DA3 /* CommonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				83FB4FD4282AC3D800224DA3 /* Assets.xcassets */,
 				83FB4FD6282AC3D800224DA3 /* LaunchScreen.storyboard */,
 				83FB4FD9282AC3D800224DA3 /* Info.plist */,
+				83FB4FE1282BA88200224DA3 /* HomeViewController.swift */,
+				83FB4FE3282C3BF500224DA3 /* CommonButton.swift */,
 			);
 			path = zoo;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				83FB4FD0282AC3D500224DA3 /* ViewController.swift in Sources */,
+				83FB4FE4282C3BF500224DA3 /* CommonButton.swift in Sources */,
 				83FB4FCC282AC3D500224DA3 /* AppDelegate.swift in Sources */,
 				83FB4FCE282AC3D500224DA3 /* SceneDelegate.swift in Sources */,
+				83FB4FE2282BA88200224DA3 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
