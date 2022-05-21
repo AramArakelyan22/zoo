@@ -14,7 +14,16 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         commonInit()
-        
+        title = NSLocalizedString("аnimal_type", comment: "")
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            image: UIImage(systemName: "gear"),
+            style: .plain,
+            target: self,
+            action: #selector(gearButtonPressed)
+        )
+    }
+    @objc func gearButtonPressed() {
+        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
     }
 }
 
