@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class onBoardinViewController: UIViewController {
     var label: UILabel!
     var button: UIButton!
     var uiPicker: UIPickerView!
@@ -15,13 +15,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         commonInit()
+        button.addTarget(self,action: #selector(goHomePage), for: .touchUpInside)
+
         // Do any additional setup after loading the view.
     }
 
-
+    
+    
+    @objc func goHomePage() {
+        let viewController = HomeViewController()
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
-extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+extension onBoardinViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     
     func pickerView(
         _ pickerView: UIPickerView,
@@ -42,7 +49,7 @@ extension ViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 }
 
 
-extension ViewController {
+extension onBoardinViewController {
     func initLable() {
         label = UILabel()
         label.text = "Welcome to Zoo"
@@ -99,5 +106,4 @@ extension ViewController {
         ])
     }
 }
-
 
